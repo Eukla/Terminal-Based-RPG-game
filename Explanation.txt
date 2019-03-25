@@ -1,0 +1,20 @@
+Explanation:In tha main function , we store the input file data in an array , that is then used to construct the Game.
+In the Game constuctor the data are stored in a database class , that stores and distributes the input data during the game.
+We used templates so that the database can store multiple type of class items , like Weapons, Potions etc without needing extra code.
+In the game constructor we print an introductory text.(At this point we start using the graphics which are consisted of a clearScreen function,
+that clears the screen, the print function that uses prints the messages with color , style and/or colored layout.
+There is also the unbuffered input function ,that takes a character as input without the use of enter , so that we give a more "gamey" feel to the program with the help of the termios library)
+The player then chooses the heroe(s) he wants as well as their class.Then the game begins, the grid is created as a 20 x 20 squeare with certain percentage for each type of block to appear.
+Each type of block is of a certain class with each seperate type of function.
+The map is constantly shown and exhibits with * the non accessible blocks and M the markets.Heroes can move as a set of up to 3.One of them is the main Hero , which is the one that shops, you can check his back ,equip potions or equip/change Weapons.
+You can change the main hero and do all the procedures instructed , according to the help that appears and can be toggled on/off by pressing the K button.
+When a shop is visited , the main hero can buy sell or just view the store's wares.If he doesn't have enough money , high enough level or he has the item already(except for potions) , he cant buy the item.
+The player can buy potions that are consumed on use.Potions cannot give the hero more than 100 HP or MP and their effects are permament.
+All the items the player buys are stored in lists according to their type with the help of templates.
+The player might engage compat as he walks , and the enemies are from 1 to 3 monsters , close to the level of the main hero.The hero can change weapons , attack an alive enemy or cast a spell, with an expense of a turn.
+He chooses the enemy he wants to attack or cast a spell to by choosing the monster's number.The spells , cast debuffs, that last for a set time , or until another spell is cast.
+The damage dealt is calculated by damage-armor.If a hero chooses an action , he can change his mind, and select another one , without the expense of a turn.
+The maximum level a player can reach is 10 , even though it is pretty hard.
+When not in a fight or a shop , the player can choose to quit the game.
+
+  
